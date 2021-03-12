@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/basketball2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/houstonRockets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:text="@string/houston_rockets"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/goldenState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/golden_state"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:textSize="23sp"
+        android:background="@color/white"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/houstonImage"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/houstonRockets"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/rockets"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/goldenStateImage"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/houstonRockets"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/goldenstate"
+        android:contentDescription="Image of golden state" />
+
+    <TextView
+        android:id="@+id/hrScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/houstonImage"
+        android:text="@string/score_0"
+        android:textSize="30sp"
+        android:layout_marginStart="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/gsScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goldenStateImage"
+        android:layout_alignParentEnd="true"
+        android:text="@string/scorE_0"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="40dp"/>
+
+    <Button
+        android:id="@+id/hrButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_below="@id/hrScore"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/white"
+        android:text="@string/bucket"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/gsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gsScore"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:text="@string/bucket_2"
+        android:textAlignment="center"
+        android:layout_marginEnd="40dp"
+        />
+
+</RelativeLayout>
